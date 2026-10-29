@@ -1,368 +1,742 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-
-    <title>MTS AL-MUNAWWAR GEGEMPALAN</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-    <!-- boot -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <title>MTs Al-Munawwar Gegempalan - Cikoneng Ciamis</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-
-    <!-- lightslider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            dark: '#022c22',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-hero {
+    background: linear-gradient(
+        135deg, 
+        rgba(6, 78, 59, 0.60) 0%, 
+        rgba(4, 120, 87, 0.50) 40%, 
+        rgba(2, 44, 34, 0.70) 100%
+    ), url('img/467774250_545397228272943_2626727210309035067_n.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brand-600 selection:text-white">
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light  navbarHome fixed-top">
-        <div class="container">
-
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Logo MTs Al-Munawwar Gegempalan">
-                <h1>MTS AL-MUNAWWAR<br>GEGEMPALAN</h1>
-            </a>
-
-            <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="galeri.html">Galeri</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="artikel.html">Artikel</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="ekstrakulikuler.html">Ekstrakulikuler</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="kontak.html">Contact Us</a>
-                    </li>
-
-                </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-
-                    <input class="form-control sm-2" type="search" placeholder="Cari Artikel" aria-label="Search">
-
-                    <button class="btn btn-primary sm-0" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-
-                </form> -->
+    <!-- TOP HEADER / INFO BAR -->
+    <div class="bg-brand-dark text-brand-100 text-xs sm:text-sm py-2 px-4 border-b border-brand-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-1.5"><i class="fas fa-map-marker-alt text-gold-400"></i> Gegempalan, Cikoneng, Ciamis</span>
+                <span class="flex items-center gap-1.5"><i class="fas fa-envelope text-gold-400"></i> info@mtsalmunawwar.sch.id</span>
             </div>
-
-        </div>
-    </nav>
-
-
-    <ul id="autoWidth" class="cs-hidden">
-        <li class="item-a">
-      
-                <img class="satu" src="images/banner-shd.png" alt="Team Work">
-                <div class="shadow"></div>
-                <div class="container">
-                    <div class="mainText">
-                        <div class="garis"></div>
-                        <h3>Our Values</h3>
-                        <h1>TEAMWORK</h1>
-                    </div>
-
-                    <h3>Teamwork In Our Endeavours</h3>
+            <div class="flex items-center gap-4">
+                <span class="hidden md:inline text-brand-200">MTs Al-Munawwar Gegempalan</span>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hover:text-gold-400 transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gold-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gold-400 transition" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
-        
-        </li>
-    </ul>
-
-
-    <div class="sambutan">
-        <h1>Selamat Datang di Website </h1>
-        <h1>MTS Al-Munawwar Gegempalan</h1>
+            </div>
+        </div>
     </div>
 
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & School Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="img/CG2.png" alt="Logo MTs Al-Munawwar" class="w-12 h-12 object-contain group-hover:scale-105 transition-transform duration-300">
+                    <div>
+                        <span class="text-lg sm:text-xl font-extrabold text-brand-900 block leading-tight tracking-tight">MTs AL-MUNAWWAR</span>
+                        <span class="text-xs font-semibold text-gold-600 tracking-wider uppercase">Gegempalan - Cikoneng - Ciamis</span>
+                    </div>
+                </a>
 
-    <div class="kepsek">
-        <div class="container">
-            <img src="images/logo.png" alt="Kepala MTs Al-Munawwar Gegempalan">
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 font-medium text-gray-700 text-sm">
+                    <a href="#beranda" class="text-brand-700 font-bold hover:text-brand-700 transition">Beranda</a>
+                    <a href="#profil" class="hover:text-brand-700 transition">Profil</a>
+                    <a href="#visimisi" class="hover:text-brand-700 transition">Visi & Misi</a>
+                    <a href="#ekstrakurikuler" class="hover:text-brand-700 transition">Ekstrakurikuler</a>
+                    <a href="#berita" class="hover:text-brand-700 transition">Berita</a>
+                    <a href="#galeri" class="hover:text-brand-700 transition">Galeri</a>
+                    <a href="#kontak" class="hover:text-brand-700 transition">Kontak</a>
+                </nav>
 
-            <div class="visiMisi">
-
-                <div class="visi">
-                    <h5>Our Vision</h5>
-                    <h3>Nurturing Leaders for God, Country and Community</h3>
+                <!-- CTA Button -->
+                <div class="hidden lg:flex items-center">
+                    <a href="#kontak" class="px-5 py-2.5 bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white text-sm font-semibold rounded-full shadow-md shadow-brand-700/20 hover:shadow-brand-700/40 transition-all duration-300 transform hover:-translate-y-0.5">
+                        <i class="fas fa-paper-plane mr-1.5 text-gold-400"></i> Pendaftaran
+                    </a>
                 </div>
 
-                <div class="misi">
-                    <h5>Our Mission</h5>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet cum id reiciendis laudantium esse
-                        fuga quo ullam possimus illum eum, quibusdam officiis perspiciatis aperiam sed sapiente incidunt
-                        sit veritatis fugiat quisquam eius odit. Iste sunt eius quos, earum harum cumque, quia quo,
-                        ipsam iusto enim inventore cupiditate nesciunt quisquam dolore!
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-brand-700 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="block py-2 text-brand-700 font-bold">Beranda</a>
+            <a href="#profil" class="block py-2 text-gray-700 hover:text-brand-700 font-medium">Profil</a>
+            <a href="#visimisi" class="block py-2 text-gray-700 hover:text-brand-700 font-medium">Visi & Misi</a>
+            <a href="#ekstrakurikuler" class="block py-2 text-gray-700 hover:text-brand-700 font-medium">Ekstrakurikuler</a>
+            <a href="#berita" class="block py-2 text-gray-700 hover:text-brand-700 font-medium">Berita</a>
+            <a href="#galeri" class="block py-2 text-gray-700 hover:text-brand-700 font-medium">Galeri</a>
+            <a href="#kontak" class="block py-2 text-gray-700 hover:text-brand-700 font-medium">Kontak</a>
+            <a href="#kontak" class="block text-center mt-4 w-full py-2.5 bg-brand-700 text-white font-semibold rounded-lg shadow">Pendaftaran & Informasi</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (LATAR BELAKANG FOTO LINGKUNGAN SEKOLAH) -->
+    <section id="beranda" class="gradient-hero min-h-[88vh] flex items-center relative text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-6">
+                
+                <!-- Logo Badge Header Hero -->
+                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+                    <img src="img/CG2.png" alt="Logo Madrasah" class="w-8 h-8 object-contain">
+                    <span class="text-gold-400 font-bold text-xs sm:text-sm tracking-wide">MTS AL-MUNAWWAR GEGEMPALAN</span>
+                </div>
+
+                <!-- Main Title Heading -->
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white drop-shadow-md">
+                    Selamat Datang di <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-300 to-yellow-200">
+                        MTs AL-MUNAWWAR GEGEMPALAN
+                    </span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-base sm:text-xl text-brand-100/95 leading-relaxed font-normal max-w-2xl drop-shadow">
+                    Mencetak Lulusan Madrasah Unggul yang Berorientasi pada Peningkatan IPTEK dan IMTAQ
+                </p>
+
+                <!-- Call To Action Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 pt-4">
+                    <a href="#profil" class="px-8 py-3.5 bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-600 hover:to-amber-600 text-gray-900 font-bold rounded-xl shadow-xl hover:shadow-amber-500/30 transition-all duration-300 transform hover:-translate-y-0.5">
+                        <i class="fas fa-book-open mr-2"></i> Jelajahi Profil
+                    </a>
+                    <a href="#visimisi" class="px-8 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-semibold rounded-xl border border-white/30 hover:border-white/50 transition-all duration-300">
+                        Visi & Misi
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Decorative Bottom Curve -->
+        <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none pointer-events-none">
+            <svg class="relative block w-full h-10 sm:h-16 text-gray-50" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.37,130.83,121.61,192,110.34Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- KEY HIGHLIGHTS STATS -->
+    <section class="py-10 bg-gray-50 -mt-6 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-xl">
+                        <i class="fas fa-microchip text-gold-600"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-900 mb-1">IPTEK</h3>
+                    <p class="text-xs sm:text-sm font-medium text-gray-500">Berbasis Teknologi & Sains</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-xl">
+                        <i class="fas fa-quran text-gold-600"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-900 mb-1">IMTAQ</h3>
+                    <p class="text-xs sm:text-sm font-medium text-gray-500">Iman & Taqwa Kokoh</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-xl">
+                        <i class="fas fa-heart text-gold-600"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-900 mb-1">Akhlak</h3>
+                    <p class="text-xs sm:text-sm font-medium text-gray-500">Siswa Akhlakul Karimah</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-xl">
+                        <i class="fas fa-users text-gold-600"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-900 mb-1">Sinergi</h3>
+                    <p class="text-xs sm:text-sm font-medium text-gray-500">Seluruh Warga Madrasah</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL MADRASAH -->
+    <section id="profil" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="img/467774250_545397228272943_2626727210309035067_n.jpg" alt="Gedung MTs Al-Munawwar Gegempalan" class="w-full h-[380px] sm:h-[420px] object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <!-- Badge Floating -->
+                    <div class="absolute -bottom-6 -right-4 sm:right-4 z-20 bg-brand-900 text-white p-5 rounded-2xl shadow-xl max-w-xs border border-brand-700">
+                        <div class="flex items-center gap-3">
+                            <img src="img/CG2.png" alt="Logo Badge" class="w-10 h-10 object-contain">
+                            <div>
+                                <p class="text-xs font-semibold text-gold-400">YAYASAN AL-MUNAWWAR</p>
+                                <p class="text-sm font-bold text-white">Gegempalan, Cikoneng, Ciamis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-brand-100 rounded-full -z-0"></div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-brand-700 font-bold uppercase tracking-wider text-sm bg-brand-50 px-3 py-1 rounded-md border border-brand-100">
+                            Profil Madrasah
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">
+                            MTs Al-Munawwar Gegempalan
+                        </h2>
+                    </div>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Madrasah Tsanawiyah (MTs) Al-Munawwar Gegempalan adalah lembaga pendidikan keagamaan tingkat menengah pertama yang berdedikasi tinggi di bawah naungan Yayasan Al-Munawwar. Berlokasi di Gegempalan, Kecamatan Cikoneng, Kabupaten Ciamis, Jawa Barat.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Kami berkomitmen membimbing peserta didik tidak hanya unggul dalam ilmu pengetahuan umum dan teknologi, tetapi juga kokoh dalam pendidikan agama Islam, nilai moral, serta keimanan dan ketaqwaan kepada Allah SWT.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center gap-3 p-3.5 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fas fa-check-circle text-brand-600 text-lg"></i>
+                            <span class="text-sm font-semibold text-gray-800">Kurikulum Terpadu & Agama</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3.5 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fas fa-check-circle text-brand-600 text-lg"></i>
+                            <span class="text-sm font-semibold text-gray-800">Pembentukan Akhlak Mulia</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3.5 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fas fa-check-circle text-brand-600 text-lg"></i>
+                            <span class="text-sm font-semibold text-gray-800">Lingkungan Asri & Kondusif</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3.5 bg-gray-50 rounded-xl border border-gray-100">
+                            <i class="fas fa-check-circle text-brand-600 text-lg"></i>
+                            <span class="text-sm font-semibold text-gray-800">Pendidik Berpengalaman</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VISI & MISI SECTION -->
+    <section id="visimisi" class="py-16 bg-gradient-to-b from-brand-50/50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-700 font-bold uppercase tracking-wider text-sm bg-brand-100/70 px-3 py-1 rounded-md">
+                    Pedoman Utama
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Visi & Misi Madrasah</h2>
+                <p class="text-gray-600 mt-2">Arah dan komitmen bersama seluruh warga MTs Al-Munawwar Gegempalan.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- VISI BOX (4 Cols) -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-brand-900 to-brand-800 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden border border-brand-700">
+                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-gold-500/10 rounded-full blur-2xl"></div>
+                    
+                    <div class="w-14 h-14 bg-gold-500/20 rounded-2xl flex items-center justify-center text-gold-400 text-2xl mb-6 border border-gold-400/30">
+                        <i class="fas fa-eye"></i>
+                    </div>
+
+                    <h3 class="text-xs uppercase font-extrabold tracking-widest text-gold-400 mb-2">VISI MADRASAH</h3>
+                    <blockquote class="text-xl sm:text-2xl font-extrabold leading-snug text-white mb-6">
+                        "TERWUJUDNYA LULUSAN MADRASAH YANG BERORIENTASI PADA PENINGKATAN IPTEK DAN IMTAQ"
+                    </blockquote>
+
+                    <div class="pt-4 border-t border-brand-700/60 flex items-center gap-3">
+                        <img src="img/CG2.png" alt="Logo Yayasan" class="w-10 h-10 object-contain">
+                        <span class="text-xs text-brand-200 font-medium">MTs Al-Munawwar Gegempalan Ciamis</span>
+                    </div>
+                </div>
+
+                <!-- MISI BOX (7 Cols) -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-brand-100 text-brand-800 rounded-2xl flex items-center justify-center text-xl">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">MISI MADRASAH</h3>
+                            <p class="text-xs text-gray-500">Langkah-langkah strategis pencapaian visi</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3.5">
+                        <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-brand-300 transition duration-300 flex items-start gap-3.5">
+                            <span class="w-7 h-7 rounded-lg bg-brand-700 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">a</span>
+                            <p class="text-sm text-gray-700 font-medium leading-relaxed">Berorientasi ke depan dengan memperhatikan keimanan dan ketaqwaan</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-brand-300 transition duration-300 flex items-start gap-3.5">
+                            <span class="w-7 h-7 rounded-lg bg-brand-700 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">b</span>
+                            <p class="text-sm text-gray-700 font-medium leading-relaxed">Sesuai dengan norma dan harapan masyarakat</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-brand-300 transition duration-300 flex items-start gap-3.5">
+                            <span class="w-7 h-7 rounded-lg bg-brand-700 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">c</span>
+                            <p class="text-sm text-gray-700 font-medium leading-relaxed">Ingin mencapai siswa yang berakhlakul karimah</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-brand-300 transition duration-300 flex items-start gap-3.5">
+                            <span class="w-7 h-7 rounded-lg bg-brand-700 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">d</span>
+                            <p class="text-sm text-gray-700 font-medium leading-relaxed">Mendorong semangat dan komitmen seluruh warga madrasah</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-brand-300 transition duration-300 flex items-start gap-3.5">
+                            <span class="w-7 h-7 rounded-lg bg-brand-700 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">e</span>
+                            <p class="text-sm text-gray-700 font-medium leading-relaxed">Mendorong adanya perubahan yang lebih baik</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 hover:border-brand-300 transition duration-300 flex items-start gap-3.5">
+                            <span class="w-7 h-7 rounded-lg bg-brand-700 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">f</span>
+                            <p class="text-sm text-gray-700 font-medium leading-relaxed">Mengarahkan langkah-langkah strategis (misi) madrasah</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EKSTRAKURIKULER & PROGRAM KEAGAMAAN -->
+    <section id="ekstrakurikuler" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-700 font-bold uppercase tracking-wider text-sm bg-brand-50 px-3 py-1 rounded-md">
+                    Pengembangan Diri
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Ekstrakurikuler & Pembiasaan</h2>
+                <p class="text-gray-600 mt-2">Wadah mengasah bakat, karakter kepemimpinan, dan kecintaan pada Al-Qur'an.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Tahfidz & Keagamaan -->
+                <div class="bg-gradient-to-b from-brand-50 to-white p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-700 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-quran"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Tahfidz & Kajian Al-Qur'an</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Program pembiasaan menghafal Al-Qur'an, tajwid, dan pendalaman bacaan Al-Qur'an secara terintegrasi.</p>
+                </div>
+
+                <!-- Marawis / Hadroh -->
+                <div class="bg-gradient-to-b from-brand-50 to-white p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-700 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Seni Hadroh & Marawis</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Mengembangkan apresiasi seni musik keagamaan Islam, shalawat, dan kreativitas irama islami.</p>
+                </div>
+
+                <!-- Pramuka -->
+                <div class="bg-gradient-to-b from-brand-50 to-white p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-700 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Pramuka Penggalang</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Membentuk jiwa kepemimpinan, kemandirian, kepedulian sosial, serta kedisiplinan tinggi.</p>
+                </div>
+
+                <!-- PMR -->
+                <div class="bg-gradient-to-b from-brand-50 to-white p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-700 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Palang Merah Remaja (PMR)</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Melatih keterampilan pertolongan pertama, kesehatan diri, dan jiwa kemanusiaan antar sesama.</p>
+                </div>
+
+                <!-- Olahraga -->
+                <div class="bg-gradient-to-b from-brand-50 to-white p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-700 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-volleyball-ball"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Olahraga (Voli & Futsal)</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Menjaga kebugaran jasmani, sportivitas, dan kekompakan tim dalam cabang olahraga populer.</p>
+                </div>
+
+                <!-- Komputer & IPTEK -->
+                <div class="bg-gradient-to-b from-brand-50 to-white p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-700 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Klub Komputer & IPTEK</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Mengenalkan dasar-dasar teknologi informasi, literasi digital, dan pemanfaatan media positif.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BERITA & PENGUMUMAN -->
+    <section id="berita" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                <div>
+                    <span class="text-brand-700 font-bold uppercase tracking-wider text-sm bg-brand-100 px-3 py-1 rounded-md">
+                        Informasi Terkini
+                    </span>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-3">Berita & Kegiatan Madrasah</h2>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card Berita 1 -->
+                <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="img/467774250_545397228272943_2626727210309035067_n.jpg" alt="Kegiatan Madrasah" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded">Kegiatan</span>
+                        <span class="text-xs text-gray-400 ml-2">Gegempalan, Ciamis</span>
+                        <h3 class="text-base font-bold text-gray-900 mt-2.5 mb-2 hover:text-brand-700 cursor-pointer">Pembiasaan Shalat Dhuha & Istighosah Bersama</h3>
+                        <p class="text-gray-600 text-xs line-clamp-2 leading-relaxed">Dalam rangka mewujudkan siswa berakhlakul karimah, seluruh siswa MTs Al-Munawwar secara rutin melaksanakan Dhuha bersama...</p>
+                    </div>
+                </article>
+
+                <!-- Card Berita 2 -->
+                <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop" alt="IPTEK Pembelajaran" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded">IPTEK</span>
+                        <span class="text-xs text-gray-400 ml-2">Akademik</span>
+                        <h3 class="text-base font-bold text-gray-900 mt-2.5 mb-2 hover:text-brand-700 cursor-pointer">Peningkatan Pembelajaran Berbasis Media Komputer</h3>
+                        <p class="text-gray-600 text-xs line-clamp-2 leading-relaxed">Mendorong peningkatan kemampuan IPTEK, madrasah terus membina kecakapan digital siswa sesuai perkembangan jaman...</p>
+                    </div>
+                </article>
+
+                <!-- Card Berita 3 -->
+                <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop" alt="Pendaftaran Siswa Baru" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded">Pengumuman</span>
+                        <span class="text-xs text-gray-400 ml-2">PPDB</span>
+                        <h3 class="text-base font-bold text-gray-900 mt-2.5 mb-2 hover:text-brand-700 cursor-pointer">Pendaftaran Peserta Didik Baru (PPDB) MTs Al-Munawwar</h3>
+                        <p class="text-gray-600 text-xs line-clamp-2 leading-relaxed">Informasi lengkap alur penerimaan siswa baru tahun ajaran mendatang. Segera daftarkan putra-putri Anda...</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI DOKUMENTASI -->
+    <section id="galeri" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-brand-700 font-bold uppercase tracking-wider text-sm bg-brand-50 px-3 py-1 rounded-md">
+                    Dokumentasi
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Galeri Kegiatan</h2>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex justify-center flex-wrap gap-2 mb-8" id="gallery-filters">
+                <button class="filter-btn active bg-brand-700 text-white px-5 py-2 rounded-full text-xs font-semibold shadow transition" data-filter="all">Semua</button>
+                <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-brand-100 hover:text-brand-800 px-5 py-2 rounded-full text-xs font-semibold transition" data-filter="keagamaan">Keagamaan</button>
+                <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-brand-100 hover:text-brand-800 px-5 py-2 rounded-full text-xs font-semibold transition" data-filter="akademik">Akademik & IPTEK</button>
+                <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-brand-100 hover:text-brand-800 px-5 py-2 rounded-full text-xs font-semibold transition" data-filter="ekskul">Ekstrakurikuler</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <div class="gallery-item keagamaan relative rounded-2xl overflow-hidden group h-60 shadow-sm border">
+                    <img src="img/467774250_545397228272943_2626727210309035067_n.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-5">
+                        <span class="text-white font-semibold text-sm">Halaman & Lingkungan MTs Al-Munawwar</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item keagamaan relative rounded-2xl overflow-hidden group h-60 shadow-sm border">
+                    <img src="https://images.unsplash.com/photo-1609599006353-e629aa5cfb71?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-5">
+                        <span class="text-white font-semibold text-sm">Pembacaan Al-Qur'an & Setoran Tahfidz</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item akademik relative rounded-2xl overflow-hidden group h-60 shadow-sm border">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-5">
+                        <span class="text-white font-semibold text-sm">Suasana Belajar Mengajar di Kelas</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item ekskul relative rounded-2xl overflow-hidden group h-60 shadow-sm border">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-5">
+                        <span class="text-white font-semibold text-sm">Kegiatan Pramuka & Kedisiplinan</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item ekskul relative rounded-2xl overflow-hidden group h-60 shadow-sm border">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-5">
+                        <span class="text-white font-semibold text-sm">Latihan Olahraga Siswa</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item keagamaan relative rounded-2xl overflow-hidden group h-60 shadow-sm border">
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-5">
+                        <span class="text-white font-semibold text-sm">Peringatan Hari Besar Islam (PHBI)</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & LOKASI -->
+    <section id="kontak" class="py-16 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <!-- Info & Form -->
+                <div>
+                    <span class="text-brand-700 font-bold uppercase tracking-wider text-sm bg-brand-100 px-3 py-1 rounded-md">
+                        Hubungi Kami
+                    </span>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-3 mb-6">Informasi & Layanan Pesan</h2>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Alamat Lengkap</h4>
+                                <p class="text-xs text-gray-600 mt-1">Gegempalan, Kec. Cikoneng, Kabupaten Ciamis, Jawa Barat</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center shrink-0">
+                                <i class="fas fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Naungan Yayasan</h4>
+                                <p class="text-xs text-gray-600 mt-1">Yayasan Al-Munawwar Gegempalan Cikoneng Ciamis</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm">Email / Kontak</h4>
+                                <p class="text-xs text-gray-600 mt-1">info@mtsalmunawwar.sch.id / +62 812-3456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form id="contact-form" class="space-y-4 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                        <h3 class="font-bold text-gray-900 text-sm mb-2">Kirim Pesan / Pertanyaan PPDB</h3>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Nama Lengkap" required class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-xs">
+                            <input type="text" placeholder="No. WhatsApp / Email" required class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-xs">
+                        </div>
+                        <input type="text" placeholder="Subjek / Alasan Kontak" required class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-xs">
+                        <textarea rows="3" placeholder="Tuliskan pesan Anda..." required class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-600 text-xs"></textarea>
+                        
+                        <button type="submit" class="w-full py-3 bg-brand-700 hover:bg-brand-800 text-white font-semibold rounded-xl text-xs shadow transition">
+                            Kirim Pesan Sekarang
+                        </button>
+                    </form>
+                    <div id="form-alert" class="hidden mt-4 p-4 rounded-xl bg-brand-100 text-brand-900 text-xs font-semibold">
+                        <i class="fas fa-check-circle text-brand-700 mr-1.5"></i> Pesan Anda telah terkirim! Pihak madrasah akan menghubungi Anda.
+                    </div>
+                </div>
+
+                <!-- Peta Lokasi Ciamis -->
+                <div class="h-full min-h-[380px] bg-gray-200 rounded-3xl overflow-hidden shadow-sm relative border border-gray-100">
+                    <iframe 
+                        title="Peta Lokasi Cikoneng Ciamis"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15829.83273180237!2d108.2655!3d-7.3025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f57335e39df1d%3A0x401e8f1fc28c680!2sCikoneng%2C%20Kec.%20Cikoneng%2C%20Kabupaten%20Ciamis%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1650000000000!5m2!1sid!2sid" 
+                        class="w-full h-full min-h-[380px] border-0" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-white pt-14 pb-8 border-t border-brand-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+                
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="img/CG2.png" alt="Logo MTs Al-Munawwar" class="w-10 h-10 object-contain">
+                        <div>
+                            <span class="text-base font-bold block leading-tight">MTs AL-MUNAWWAR</span>
+                            <span class="text-xs text-gold-400 font-medium">Gegempalan Cikoneng</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-brand-200/80 leading-relaxed">
+                        Terwujudnya lulusan madrasah yang berorientasi pada peningkatan IPTEK dan IMTAQ serta berakhlakul karimah.
                     </p>
                 </div>
 
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- jurusan -->
-    <div class="jurusan">
-        <div class="container">
-            <h2>jurusan smakda</h2>
-
-            <div class="boxJurusan">
-
-                <div class="perBox">
-                    <img src="images/1.jpg" alt="RPL">
-                    <h3>Rekayasa Perangkat Lunak</h3>
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-sm font-bold mb-3 text-gold-400">Navigasi Utama</h4>
+                    <ul class="space-y-2 text-xs text-brand-100/80">
+                        <li><a href="#profil" class="hover:text-gold-400 transition">Profil Madrasah</a></li>
+                        <li><a href="#visimisi" class="hover:text-gold-400 transition">Visi & Misi</a></li>
+                        <li><a href="#ekstrakurikuler" class="hover:text-gold-400 transition">Ekstrakurikuler</a></li>
+                        <li><a href="#galeri" class="hover:text-gold-400 transition">Galeri Kegiatan</a></li>
+                        <li><a href="#kontak" class="hover:text-gold-400 transition">Kontak & Lokasi</a></li>
+                    </ul>
                 </div>
 
-                <div class="perBox">
-                    <img src="images/2.jpeg" alt="ATU">
-                    <h3>Agribisnis Ternak Unggas</h3>
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-sm font-bold mb-3 text-gold-400">Program Unggulan</h4>
+                    <ul class="space-y-2 text-xs text-brand-100/80">
+                        <li>Tahfidz Al-Qur'an & Tajwid</li>
+                        <li>Pembentukan Akhlakul Karimah</li>
+                        <li>Peningkatan IPTEK & Komputer</li>
+                        <li>Seni Hadroh & Marawis</li>
+                        <li>Pramuka & Kepemimpinan</li>
+                    </ul>
                 </div>
 
-                <div class="perBox">
-                    <img src="images/3.jpeg" alt="APHP">
-                    <h3>Agribisnis Pengolahan Hasil Pangan</h3>
-                </div>
-
-                <div class="perBox">
-                    <img src="images/4.jpeg" alt="API">
-                    <h3>Agribisnis Perikanan Ikan</h3>
-                </div>
-
-                <!-- <div class="perBox">
-                    <img src="images/6.jpg" alt="AKUTANSI">
-                    <h3>Akutansi Keuangan & Lembaga</h3>
-                </div> -->
-
-
-                <div class="perBox">
-                    <img src="images/5.jpeg" alt="TKR">
-                    <h3>Teknik Kendaraan Ringan</h3>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="containerArtikelHome container">
-        <h2>Artikel Terbaru</h2>
-
-        <div class="artikelHome">
-
-
-            <a class="perArtikelHome">
-                <img src="images/1.jpg" alt="Foto Artikel">
-                <h3>Tutorial Login Laravel 8</h3>
-                <small>Di tulis oleh : <span>Rifki Romadhan</span></small>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus explicabo
-                    delectus quasi amet libero iusto sequi at.
-                </p>
-            </a>
-
-            <a class="perArtikelHome">
-                <img src="images/1.jpg" alt="Foto Artikel">
-                <h3>Tutorial Login Laravel 8</h3>
-                <small>Di tulis oleh : <span>Rifki Romadhan</span></small>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus explicabo
-                    delectus quasi amet libero iusto sequi at.
-                </p>
-            </a>
-
-
-            <a class="perArtikelHome">
-                <img src="images/1.jpg" alt="Foto Artikel">
-                <h3>Tutorial Login Laravel 8</h3>
-                <small>Di tulis oleh : <span>Rifki Romadhan</span></small>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus explicabo
-                    delectus quasi amet libero iusto sequi at.
-                </p>
-            </a>
-
-
-            <a class="perArtikelHome">
-                <img src="images/1.jpg" alt="Foto Artikel">
-                <h3>Tutorial Login Laravel 8</h3>
-                <small>Di tulis oleh : <span>Rifki Romadhan</span></small>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus
-                    explicabo
-                    delectus quasi amet libero iusto sequi at.
-                </p>
-            </a>
-
-
-            <a class="perArtikelHome">
-                <img src="images/1.jpg" alt="Foto Artikel">
-                <h3>Tutorial Login Laravel 8</h3>
-                <small>Di tulis oleh : <span>Rifki Romadhan</span></small>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus
-                    explicabo
-                    delectus quasi amet libero iusto sequi at.
-                </p>
-            </a>
-
-
-            <a class="perArtikelHome">
-                <img src="images/1.jpg" alt="Foto Artikel">
-                <h3>Tutorial Login Laravel 8</h3>
-                <small>Di tulis oleh : <span>Rifki Romadhan</span></small>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus
-                    explicabo
-                    delectus quasi amet libero iusto sequi at.
-                </p>
-            </a>
-
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- sosmed icon -->
-    <div class="iconBox">
-        <a href="http://wa.me/6281214394234" class="perIconBox wa">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-        <a href="https://www.facebook.com/mts.almunawwar" class="perIconBox fb">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <a href="https://www.instagram.com/mts.almunawwar" class="perIconBox ig">
-            <i class="fab fa-instagram"></i>
-        </a>
-
-    </div>
-
-    <div class="footer">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4 class="my-4 text-white text-center">Contact Us</h4>
-
-                    <div class="footerContactUs">
-
-                        <div class="perFooterContactUs">
-                            <i class="fas text-white fa-envelope"></i>
-                            <p class="text-white">official@smkn2Gegempalan.com</p>
-                        </div>
-
-                        <div class="perFooterContactUs">
-                            <i class="fas text-white fa-phone-alt"></i>
-                            <p class="text-white">023423434234</p>
-                        </div>
-
-                        <div class="perFooterContactUs">
-                            <i class="fas text-white fa-road"></i>
-                            <p class="text-white">Jl. Raya Selaganggeng, Kec. Mrebet - Kab. Gegempalan</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-                <div class="col-md-4">
-                    <h4 class="my-4 text-center text-white">About</h4>
-                    <div class="footerAbout">
-                        <a href="" class="text-white">Artikel</a>
-                        <a href="" class="text-white">Galeri</a>
-                        <a href="" class="text-white">Contact Us</a>
-                        <a href="" class="text-white">Ekstrakulikuler</a>
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-sm font-bold mb-3 text-gold-400">Lokasi Madrasah</h4>
+                    <p class="text-xs text-brand-100/80 leading-relaxed mb-3">
+                        Gegempalan, Kec. Cikoneng, Kabupaten Ciamis, Jawa Barat.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-8 h-8 rounded-lg bg-brand-900 hover:bg-gold-500 hover:text-gray-900 flex items-center justify-center text-brand-200 transition" aria-label="Facebook"><i class="fab fa-facebook-f text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-lg bg-brand-900 hover:bg-gold-500 hover:text-gray-900 flex items-center justify-center text-brand-200 transition" aria-label="Instagram"><i class="fab fa-instagram text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-lg bg-brand-900 hover:bg-gold-500 hover:text-gray-900 flex items-center justify-center text-brand-200 transition" aria-label="YouTube"><i class="fab fa-youtube text-xs"></i></a>
                     </div>
                 </div>
 
+            </div>
 
-                <div class="col-md-4 text-center">
-                    <h4 class="my-4 text-white">Newsletter</h4>
-                    <!-- <form>
-
-                        <div class="form-group">
-                            <input class="form-control" type="search" placeholder="Example@gmail.com"
-                                aria-label="Search">
-                            <button class="btn btn-primary btn-newsletter" type="submit">Kirim</button>
-                        </div>
-
-                    </form> -->
-                </div>
+            <!-- Bottom Copyright -->
+            <div class="border-t border-brand-900 pt-6 text-center text-xs text-brand-200/50">
+                <p>&copy; 2026 MTs Al-Munawwar Gegempalan Cikoneng Ciamis. Hak Cipta Dilindungi.</p>
             </div>
         </div>
-    </div>
+    </footer>
 
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Hamburger Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
+        // Gallery Filtering Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
 
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-brand-700', 'text-white', 'shadow');
+                    b.classList.add('bg-gray-100', 'text-gray-600');
+                });
 
-   <div class="footerCopyright">
-        <p class="text-white">
-            <i class="far fa-copyright"></i>2026 By : <span>MTs Al-Munawwar Gegempalan</span>
-        </p>
-    </div>
+                btn.classList.add('active', 'bg-brand-700', 'text-white', 'shadow');
+                btn.classList.remove('bg-gray-100', 'text-gray-600');
 
+                const filter = btn.getAttribute('data-filter');
 
-    <script src="js/script.js"></script>
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Contact Form Simulation
+        const contactForm = document.getElementById('contact-form');
+        const formAlert = document.getElementById('form-alert');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formAlert.classList.remove('hidden');
+            contactForm.reset();
+
+            setTimeout(() => {
+                formAlert.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
 </body>
-
 </html>
